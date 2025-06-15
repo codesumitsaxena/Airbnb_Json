@@ -5,6 +5,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css'
 import NavbarApp from './Components/NavbarApp'
 import MiniNav from './Components/MiniNav';
+import PopularHomes from './Components/PopularHomes';
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
     <>
      <NavbarApp/>
      <MiniNav/>
+     <PopularHomes/>
+     <Footer/>
     </>
   )
 }

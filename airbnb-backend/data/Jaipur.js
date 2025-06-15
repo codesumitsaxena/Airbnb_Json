@@ -1,0 +1,59 @@
+const jaipurListings = [
+  {
+    id: 81,
+    image: "http://localhost:5000/assets/flat81.jpeg",
+    title: "Traditional Haveli",
+    rating: 4.9,
+    rate: "₹9,000 for 2 nights",
+  },
+  {
+    id: 82,
+    image: "http://localhost:5000/assets/flat82.jpeg",
+    title: "Luxury Villa with Pool",
+    rating: 4.8,
+    rate: "₹12,000 for 2 nights",
+  },
+  {
+    id: 83,
+    image: "http://localhost:5000/assets/flat83.jpeg",
+    title: "Old City Apartment",
+    rating: 4.5,
+    rate: "₹6,700 for 2 nights",
+  },
+  {
+    id: 84,
+    image: "http://localhost:5000/assets/flat84.jpeg",
+    title: "Historic Residency",
+    rating: 4.6,
+    rate: "₹7,200 for 2 nights",
+  },
+  {
+    id: 85,
+    image: "http://localhost:5000/assets/flat85.jpeg",
+    title: "Pink City View Stay",
+    rating: 4.4,
+    rate: "₹6,000 for 2 nights",
+  },
+  {
+    id: 86,
+    image: "http://localhost:5000/assets/flat86.jpeg",
+    title: "Budget Hostel",
+    rating: 4.1,
+    rate: "₹2,800 for 2 nights",
+  },
+  {
+    id: 87,
+    image: "http://localhost:5000/assets/flat87.jpeg",
+    title: "Heritage Guesthouse",
+    rating: 4.7,
+    rate: "₹7,500 for 2 nights",
+  },
+  {
+    id: 88,
+    image: "http://localhost:5000/assets/flat88.jpeg",
+    title: "Designer Stay in Jaipur",
+    rating: 4.8,
+    rate: "₹8,000 for 2 nights",
+  },
+];
+module.exports = jaipurListings;

@@ -67,3 +67,50 @@
   transition: all 0.2s ease-in-out;
 }
 
+.card{
+  width: 100%;
+  height: 260px;
+}
+
+.card-img-top{
+  height: 170px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-title{
+  font-size: 13px;
+}
+.card-text{
+  font-size: 12px;
+}
+
+.leftArrow , .rightArrow{
+  width: 30px;
+  height: 30px;
+  background-color: #e5dfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.hide-scroll {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE/Edge */
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari */
+}
+
+.list-item p{
+  line-height: 0.45rem;
+  color: gray;
+font-size: 14px;
+font-weight: 400;
+}
+
+.text-dark{
+  font-size: 15px;
+
+}
