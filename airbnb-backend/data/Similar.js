@@ -4,7 +4,7 @@ const similarListings = [
       image: "http://localhost:5000/assets/flat31.jpeg",
       title: "Room near Cyberhub",
       rating: 4.7,
-      rate: "₹3,899 for 2 nights"
+      rate: "₹3,899 for 2 nights",
     },
     {
       id: 32,
@@ -54,8 +54,11 @@ const similarListings = [
       title: "Premium Stay near Golf Course",
       rating: 5.0,
       rate: "₹9,850 for 2 nights"
-    }
-  ];
+    },
+
+    ];
+    
+
   
   module.exports = similarListings;
   

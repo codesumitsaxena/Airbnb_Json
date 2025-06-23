@@ -8,7 +8,9 @@ const southDelhiListings = require('./data/SouthDelhi');
 const nainitalListings = require('./data/Nainital');
 const southeastDelhiListings = require('./data/EastDelhi');
 const jaipurListings = require('./data/Jaipur');
-
+const gurugramDetail = require('./data/MoreGurugram');
+const guestFav = require('./data/GuestMore');
+const TestimonialsData = require('./data/MoreTesti')
 
 const app = express();
 const PORT = 5000;
@@ -45,6 +47,20 @@ app.get('/api/eastdelhi', (req, res) => {
 app.get('/api/jaipur', (req, res) => {
   res.json(jaipurListings);
 });
+
+app.get('/api/gurugramDetail', (req, res) => {
+  res.json(gurugramDetail);
+});
+
+app.get('/api/guestFav', (req, res) => {
+  res.json(guestFav);
+});
+
+app.get('/api/testiData', (req, res) => {
+  res.json(TestimonialsData);
+});
+
+
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });

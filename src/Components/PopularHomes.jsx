@@ -43,9 +43,7 @@ function PopularHomes() {
       .then(res => res.json())
       .then(data => setEastDelhi(data));
 
-      fetch('http://localhost:5000/api/goa')
-      .then(res => res.json())
-      .then(data => setGoa(data));
+     
   }, []);
   
 

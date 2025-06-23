@@ -1,0 +1,16 @@
+body {
+    font-family: 'Inter', sans-serif;
+    
+  }
+  
+
+ .inputBtn:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+
+ }
+
+ .inputBtn{
+  border: none;
+ }

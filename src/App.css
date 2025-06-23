@@ -1,3 +1,22 @@
+body {
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.SpecialFont{
+  font-family: 'Poppins', sans-serif;
+  color: #484848;
+  line-height: 1.6;
+
+}
+
 .logo{
   width: 130px;
   height: auto;
@@ -95,12 +114,12 @@
   border-radius: 50%;
 }
 .hide-scroll {
-  scrollbar-width: none;         /* Firefox */
-  -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;       
+  -ms-overflow-style: none; 
 }
 
 .hide-scroll::-webkit-scrollbar {
-  display: none;                 /* Chrome, Safari */
+  display: none;            
 }
 
 .list-item p{
@@ -114,3 +133,155 @@ font-weight: 400;
   font-size: 15px;
 
 }
+
+.top-badge {
+  z-index: 2;
+}
+
+.guest-fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBE9E5;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold; 
+  padding: 1px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.heart-icon{
+color:rgba(0, 0, 0, 0.556);
+}
+
+
+
+.heart-icon {
+  padding: 6px;
+  color: white; /* white by default */
+
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+.heart-icon.liked {
+  color: rgb(226, 51, 51);
+}
+
+.miniNavArea{
+  max-width: 400px;
+}
+
+.NavHome{
+  height: 40px;
+}
+
+.MoreImg{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.lineSpace{
+  line-height: 0.8;
+}
+
+.ShowMore{
+  background-color: #f2ebeb;
+  border-radius: 8px;
+}
+.ItemComment{
+  font-weight: 500;
+}
+
+.container-fluid {
+width: 100vw;
+}
+
+.itemColor{
+  font-weight: 600;
+  color: rgba(15, 15, 15, 0.786);
+  font-size: 14px;
+}
+
+.AddToCart{
+  height: 300px;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: sticky;
+  margin: 40px;
+  border-radius: 20px;
+  
+}
+
+.CartBTn{
+  border: none;
+  color: white;
+  background-color: crimson;
+}
+
+
+  .ScrollableParent {
+    min-height: 1500px; 
+    position: relative;
+  }
+  
+  .scrollable-left {
+    overflow-y: auto;
+    max-height: 100%;
+    padding-right: 15px;
+  }
+  
+  .sticky-box {
+    position: sticky;
+    top: 100px; 
+  }
+  
+
+  .rounded-modal .modal-content {
+    border-radius: 30px !important;
+    overflow: hidden !important;
+    background-color: white !important;
+    border: none;
+  }
+
+  .react-tel-input .form-control {
+    border-radius: 8px;
+    padding-left: 50px;
+  }
+  
+
+  .LoginInput:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: black;
+  }
+  
+  .custom-scroll-modal::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .custom-scroll-modal::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .custom-scroll-modal::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 8px;
+  }
+  
+  .custom-scroll-modal::-webkit-scrollbar-thumb:hover {
+    background-color: #8e8e8e;
+  }
+  
+
+  .destinationArea {
+    transition: background-color 0.3s ease;
+  }
+  
+  .destinationArea:hover {
+    background-color: #eaeaea; /* lighter and softer */
+  }
+  

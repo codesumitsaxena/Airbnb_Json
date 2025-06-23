@@ -1,61 +1,60 @@
 const gurugramListings = [
-    {
-      id: 1,
-      image: "http://localhost:5000/assets/flat1.jpeg",
-      title: "Flat in Gurugram",
-      rating: 4.8,
-      rate: "₹7,110 for 2 nights"
-    },
-    {
-      id: 2,
-      image: "http://localhost:5000/assets/flat2.jpeg",
-      title: "Flat in Gurugram",
-      rating: 4.7,
-      rate: "₹5,867 for 2 nights"
-    },
-    {
-      id: 3,
-      image: "http://localhost:5000/assets/flat3.jpeg",
-      title: "Flat in Gurugram",
-      rating: 4.6,
-      rate: "₹4,510 for 2 nights"
-    },
-    {
-      id: 4,
-      image: "http://localhost:5000/assets/flat4.jpeg",
-      title: "Hotel in Gurugram",
-      rating: 4.5,
-      rate: "₹3,395 for 2 nights"
-    },
-    {
-      id: 5,
-      image: "http://localhost:5000/assets/flat5.jpeg",
-      title: "Room in Gurugram",
-      rating: 4.4,
-      rate: "₹2,385 for 2 nights"
-    },
-    {
-      id: 6,
-      image: "http://localhost:5000/assets/flat6.jpeg",
-      title: "Flat in Gurugram",
-      rating: 4.9,
-      rate: "₹20,000 for 2 nights"
-    },
-    {
-      id: 7,
-      image: "http://localhost:5000/assets/flat7.jpg",
-      title: "Flat in Gurugram",
-      rating: 4.6,
-      rate: "₹7,110 for 2 nights"
-    },
-    {
-      id: 8,
-      image: "http://localhost:5000/assets/flat8.jpeg",
-      title: "Flat in Gurugram",
-      rating: 4.9,
-      rate: "₹20,000 for 2 nights"
-    }
-  ];
-  
-  module.exports = gurugramListings; // ✅ Correct syntax
-  
+  {
+    id: 1,
+    image: "http://localhost:5000/assets/FlatGurugram2.11.jpeg",
+    title: "Modern 2BHK Flat near Cyber Hub",
+    rating: 4.8,
+    rate: "₹7,110 for 2 nights"
+  },
+  {
+    id: 2,
+    image: "http://localhost:5000/assets/Flat21.11.jpeg",
+    title: "Luxury Flat with Balcony & View",
+    rating: 4.7,
+    rate: "₹5,867 for 2 nights"
+  },
+  {
+    id: 3,
+    image: "http://localhost:5000/assets/FlatGurugram31.11.jpg",
+    title: "Budget Studio Flat near Metro",
+    rating: 4.6,
+    rate: "₹4,510 for 2 nights"
+  },
+  {
+    id: 4,
+    image: "http://localhost:5000/assets/FlatGurugram41.11.jpeg",
+    title: "Premium Room at Golf Course Road",
+    rating: 4.5,
+    rate: "₹3,395 for 2 nights"
+  },
+  {
+    id: 5,
+    image: "http://localhost:5000/assets/FlatGurugram51.11.jpg",
+    title: "Compact Room in DLF Phase 2",
+    rating: 4.4,
+    rate: "₹2,385 for 2 nights"
+  },
+  {
+    id: 6,
+    image: "http://localhost:5000/assets/FlatGurugram61.11.jpeg",
+    title: "4BHK Corporate Suite with AC",
+    rating: 4.9,
+    rate: "₹20,000 for 2 nights"
+  },
+  {
+    id: 7,
+    image: "http://localhost:5000/assets/FlatGurugram71.11.jpeg",
+    title: "Modern 3BHK with Kitchen & Parking",
+    rating: 4.6,
+    rate: "₹7,110 for 2 nights"
+  },
+  {
+    id: 8,
+    image: "http://localhost:5000/assets/FlatGurugram81.11.jpeg",
+    title: "Luxurious Penthouse with Rooftop",
+    rating: 4.9,
+    rate: "₹24,000 for 2 nights"
+  }
+];
+
+module.exports = gurugramListings;

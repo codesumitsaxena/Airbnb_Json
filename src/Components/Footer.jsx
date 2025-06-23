@@ -1,13 +1,13 @@
 import React from 'react'
-
 function Footer() {
   return (
     <div className='container-fluid bg-light '>
         <div className="container-fluid px-3 py-5">
      <h4>Inspiration for future getaways</h4>
+     
      <hr />
      <div className="row">
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Yurt Rental</h6>
             <p>United States</p>
@@ -22,7 +22,7 @@ function Footer() {
        </div>
            
         </div>
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Houseboats</h6>
             <p>United States</p>
@@ -37,7 +37,7 @@ function Footer() {
        </div>
            
         </div>
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Farm House</h6>
             <p>United States</p>
@@ -52,7 +52,7 @@ function Footer() {
        </div>
            
         </div>
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Luxury cabins</h6>
             <p>United Kingdom</p>
@@ -67,7 +67,7 @@ function Footer() {
        </div>
            
         </div>
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Farm Houses </h6>
             <p>United States</p>
@@ -82,7 +82,7 @@ function Footer() {
        </div>
            
         </div>
-        <div className="col-lg-2">'
+        <div className="col-lg-2">
        <div className="list-item">
              <h6>Luxury Cabins</h6>
             <p>United Kingdom</p>
@@ -146,9 +146,27 @@ function Footer() {
              </div>
         </div>
      </div>
-
      <hr />
-
+         <div className="row">
+          <div className="footer-bottom d-flex justify-content-between align-items-center">
+               <div className="footer-left d-flex gap-3 align-items-center ">
+                   <a href="" className='text-decoration-none text-dark'>© 2025 Airbnb, Inc.</a>
+                    <a href="" className='text-decoration-none text-dark'>Privacy</a>
+                     <a href="" className='text-decoration-none text-dark'>Terms</a>
+                    <a href="" className='text-decoration-none text-dark'>Sitemap</a>
+                    <a href="" className='text-decoration-none text-dark'>Comapny Detail</a>
+               </div>
+               <div className="footer-right d-flex gap-2 align-items-center">
+                    <span><i className="bi bi-globe2"></i> English</span>
+                    <span><i className="bi bi-currency-rupee"></i> INR</span>
+                    <div className="footer-icon d-flex gap-3">
+                    <i className="bi bi-facebook fs-5"></i>
+                    <i className="bi bi-instagram fs-5"></i>
+                    <i className="bi bi-twitter fs-5"></i>
+                    </div>
+               </div>
+          </div>
+         </div>
         </div>
       
     </div>

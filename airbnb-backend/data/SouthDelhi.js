@@ -43,18 +43,20 @@ const southDelhiListings = [
     },
     {
       id: 47,
-      image: "http://localhost:5000/assets/flat47.jpg",
+      image: "http://localhost:5000/assets/flat47.jpeg",
       title: "Flat in South Delhi",
       rating: 4.8,
       rate: "₹8,250 for 2 nights"
     },
     {
       id: 48,
-      image: "http://localhost:5000/assets/flat48.jpg",
+      image: "http://localhost:5000/assets/flat48.jpeg",
       title: "Flat in South Delhi",
       rating: 4.8,
       rate: "₹8,250 for 2 nights"
     },
+
+    
   ];
   
   module.exports = southDelhiListings;
