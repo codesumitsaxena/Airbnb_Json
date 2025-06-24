@@ -29,7 +29,7 @@ function Menu() {
       <hr className="my-2" />
 
       <div className="mb-3">
-        <Link to='/MoreNoida' className="mb-1 fw-medium text-dark" style={{ cursor: "pointer" }}>Refer a host</Link>
+        <Link to='/payment' className="mb-1 fw-medium text-dark" style={{ cursor: "pointer" }}>Refer a host</Link>
         <p className="mb-0 fw-medium text-dark" style={{ cursor: "pointer" }}>Find a co-host</p>
       </div>
 

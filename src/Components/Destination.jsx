@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
-import DestinationSeacrch_01 from '../assets/DestinationSeacrch_01.png'
-import DestinationSeacrch_02 from '../assets/DestinationSeacrch_02.png'
-import DestinationSeacrch_03 from '../assets/DestinationSeacrch_03.png'
-import DestinationSeacrch_04 from '../assets/DestinationSeacrch_04.png'
-import DestinationSeacrch_05 from '../assets/DestinationSeacrch_05.png'
-import DestinationSeacrch_06 from '../assets/DestinationSeacrch_06.png'
-import DestinationSeacrch_07 from '../assets/DestinationSeacrch_07.png'
-import DestinationSeacrch_08 from '../assets/DestinationSeacrch_08.png'
-
+import React, { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
+import DestinationSeacrch_01 from "../assets/DestinationSeacrch_01.png";
+import DestinationSeacrch_02 from "../assets/DestinationSeacrch_02.png";
+import DestinationSeacrch_03 from "../assets/DestinationSeacrch_03.png";
+import DestinationSeacrch_04 from "../assets/DestinationSeacrch_04.png";
+import DestinationSeacrch_05 from "../assets/DestinationSeacrch_05.png";
+import DestinationSeacrch_06 from "../assets/DestinationSeacrch_06.png";
+import DestinationSeacrch_07 from "../assets/DestinationSeacrch_07.png";
+import DestinationSeacrch_08 from "../assets/DestinationSeacrch_08.png";
 
 function Destination() {
   const [modalShow, setModalShow] = useState(false);
-
+ const [selectedLocation , setSelectedLocation] = useState("")
   const Destination = [
     {
       id: 2,
@@ -57,13 +56,24 @@ function Destination() {
       Description: "Explore nearby trending destinations",
     },
   ];
-  
+
+  const handleLocationClick = (location) => {
+    setSelectedLocation(location);  
+    setModalShow(false); 
+  };
+
+
 
   return (
     <>
-        <input type="text" placeholder='Search destination' className='inputArea' onClick={() => setModalShow(true)} />
-
-
+      <input
+        type="text"
+        placeholder="Search destination"
+        className="inputArea"
+        onClick={() => setModalShow(true)}
+        value={selectedLocation} 
+        readOnly
+      />
 
       <Modal
         show={modalShow}
@@ -71,49 +81,69 @@ function Destination() {
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        style={{maxWidth:"400px", marginTop:"90px", marginLeft:"200px"}}>
-       
-        <Modal.Body >
-        <div className="container p-3 custom-scroll-modal" style={{ maxHeight: "430px", overflowY: "auto" }}>
+        backdrop={false}         
+        keyboard={true}
+        style={{ maxWidth: "400px", marginTop: "90px", marginLeft: "200px" }}
+      >
+        <Modal.Body>
+          <div
+            className="container p-3 custom-scroll-modal"
+            style={{ maxHeight: "430px", overflowY: "auto" }}
+          >
             <h6>Recent searches</h6>
-            <div className="destinationArea d-flex align-items-center gap-3 p-2 rounded  mb-2" style={{ cursor: "pointer",  }}>
-  <div className="destinationImg">
-    <img
-      src={DestinationSeacrch_01}
-      alt="DestinationSeacrch_01"
-      className="img-fluid rounded"
-      style={{ height: "70px", width: "70px", objectFit: "cover" }}
-    />
-  </div>
-  <div className="destionationText">
-    <h6 className="m-0 fw-bold">Noida, Uttar Pradesh</h6>
-    <p className="m-0 text-muted" style={{ fontSize: "14px" }}>Family Friendly</p>
-  </div>
-</div>
-<h6>Suggested destinations</h6>
-<div className="ParentDestination">
-  {Destination.map((item, index)=>(
-                <div className="destinationArea d-flex align-items-center gap-3 p-2 rounded  mb-2" style={{ cursor: "pointer",  }}>
-                <div className="destinationImg">
-                  <img
-                    src={item.img}
-                    alt={item.location}
-                    className="img-fluid rounded"
-                    style={{ height: "70px", width: "70px", objectFit: "cover" }}
-                  />
-                </div>
-                <div className="destionationText">
-                  <h6 className="m-0 fw-bold">{item.location}</h6>
-                  <p className="m-0 text-muted" style={{ fontSize: "14px" }}>{item.Description}</p>
-                </div>
+            <div
+              className="destinationArea d-flex align-items-center gap-3 p-2 rounded mb-2"
+              style={{ cursor: "pointer" }}
+              onClick={() => handleLocationClick("Noida, Uttar Pradesh")}
+            >
+              <div className="destinationImg">
+                <img
+                  src={DestinationSeacrch_01}
+                  alt="DestinationSeacrch_01"
+                  className="img-fluid rounded"
+                  style={{ height: "70px", width: "70px", objectFit: "cover" }}
+                />
               </div>
-  ))}
-</div>
+              <div className="destionationText">
+                <h6 className="m-0 fw-bold">Noida, Uttar Pradesh</h6>
+                <p className="m-0 text-muted" style={{ fontSize: "14px" }}>
+                  Family Friendly
+                </p>
+              </div>
+            </div>
 
-            
-         </div>
+            <h6>Suggested destinations</h6>
+            <div className="ParentDestination">
+              {Destination.map((item, index) => (
+                <div
+                  key={item.id}
+                  className="destinationArea d-flex align-items-center gap-3 p-2 rounded mb-2"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => handleLocationClick(item.location)}
+                >
+                  <div className="destinationImg">
+                    <img
+                      src={item.img}
+                      alt={item.location}
+                      className="img-fluid rounded"
+                      style={{
+                        height: "70px",
+                        width: "70px",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                  <div className="destionationText">
+                    <h6 className="m-0 fw-bold">{item.location}</h6>
+                    <p className="m-0 text-muted" style={{ fontSize: "14px" }}>
+                      {item.Description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </Modal.Body>
-       
       </Modal>
     </>
   );

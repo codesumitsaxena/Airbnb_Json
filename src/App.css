@@ -285,3 +285,27 @@ width: 100vw;
     background-color: #eaeaea; /* lighter and softer */
   }
   
+  .miniNavHover:hover{
+    background-color: #e5dfdf;
+  }
+  
+
+  
+  .whoModalwidth .modal-content {
+    border-radius: 16px;
+    padding: 0px;
+  }
+  
+  .modal-body{
+    padding: 0px;
+  }
+  
+.WhoguestInput{
+  border: none;
+} 
+
+.WhoguestInput:focus{
+  outline: none;
+  border: none;
+}
+  

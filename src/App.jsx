@@ -11,6 +11,7 @@ import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
 import '@fontsource/nunito'; // Defaults to 400
 import LoginPage from './Components/Login'
+import Payment from './Components/Payment';
 
 
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/cardmore/:id" element={<CardMore />} />
         <Route path= "/login" element={<LoginPage/>}></Route>
+        <Route path='/payment' element={<Payment/>}></Route>
         <Route path= "/MoreNoida" element={<MoreDataNoida/>}></Route>
         <Route path="/" element={
           <>
