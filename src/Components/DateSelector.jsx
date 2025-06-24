@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DateRange } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; // Main style
-import 'react-date-range/dist/theme/default.css'; // Theme style
+import 'react-date-range/dist/styles.css'; 
+import 'react-date-range/dist/theme/default.css'; 
 
 function DateSelector({ onDateChange }) {
   const [range, setRange] = useState([

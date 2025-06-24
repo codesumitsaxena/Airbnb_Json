@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleLike } from '../features/likes/LikeSlice';
+
 
 
 function HomeCarousel({ title, data }) {
@@ -21,12 +24,10 @@ function HomeCarousel({ title, data }) {
     scrollRef.current.scrollBy({ left: 500, behavior: 'smooth' });
   };
 
-  const toggleLike = (id) => {
-    const updated = cards.map(card =>
-      card.id === id ? { ...card, liked: !card.liked } : card
-    );
-    setCards(updated);
-  };
+
+  const dispatch = useDispatch();
+const likedItems = useSelector(state => state.likes.likedItems);
+
 
   const navigate = useNavigate();
 
@@ -55,11 +56,20 @@ function HomeCarousel({ title, data }) {
               <div className="position-relative">
                 <img src={item.image} className="card-img-top" alt={item.title} />
                 <div className="top-badge d-flex justify-content-between px-1 py-1 w-100 position-absolute top-0">
-                  <span className="guest-fav">Guest Favourite</span>
-                  <i
-                    className={`bi ${item.liked ? "bi-heart-fill liked" : "bi-heart"} fs-5 heart-icon`}
-                    onClick={() => toggleLike(item.id)}
-                  ></i>
+                {item.guestFav && (
+  <span className="guest-fav px-3 py-2">Guest Favourite</span>
+)}
+ <div className="position-absolute top-0 end-0 px-2 py-2">
+ <i
+  className={`bi ${likedItems[item.id] ? "bi-heart-fill liked" : "bi-heart"} fs-5 heart-icon`}
+  onClick={(e) => {
+    e.stopPropagation();
+    dispatch(toggleLike(item.id));
+  }}
+  role="button"
+/>
+
+  </div>
                 </div>
               </div>
               <div className='card-body m-0 p-2'>

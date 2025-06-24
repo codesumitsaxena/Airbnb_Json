@@ -63,7 +63,7 @@ function WhoModel() {
   return (
     <>
       <div className="GuestText mt-2" onClick={() =>setModalShow(true)}>
-        <h6 className='miniNavHeading'>Who</h6>
+        <h6 className='miniNavHeading mb-0'>Who</h6>
 <input
   className="miniNavPara WhoguestInput mb-0"
   value={

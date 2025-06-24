@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import DateModal from './DateModal'
 
 function Counter({ rate, selectedDates }) {
   const [adult, setAdult] = useState(0);
@@ -63,40 +64,7 @@ function Counter({ rate, selectedDates }) {
           className="DateArea d-flex border-bottom align-items-center"
           style={{ height: "55%" }}
         >
-          <div className="col ps-3 border-end">
-            <h6 className="fw-bold" style={{ lineHeight: "0.3" }}>
-              Check-In
-            </h6>
-            <input
-              type="text"
-              className="inputBtn"
-              placeholder="Add Date"
-              value={
-                selectedDates?.startDate
-                  ? selectedDates.startDate.toLocaleDateString()
-                  : ""
-              }
-              readOnly
-              style={{ width: "80px", display: "block" }}
-            />
-          </div>
-          <div className="col ps-3">
-            <h6 className="fw-bold" style={{ lineHeight: "0.3" }}>
-              CheckOut
-            </h6>
-            <input
-              type="text"
-              className="inputBtn"
-              placeholder="Add Date"
-              value={
-                selectedDates?.endDate
-                  ? selectedDates.endDate.toLocaleDateString()
-                  : ""
-              }
-              readOnly
-              style={{ width: "80px", display: "block" }}
-            />
-          </div>
+          <DateModal/>
         </div>
         <div className="AddGuest d-flex mt-2 justify-content-between px-3 pt-1">
           <div className="DropDownArea">

@@ -25,13 +25,15 @@ import { useState } from "react";
 import CardMoreNav from './CardMoreNav'
 import { data } from "react-router-dom";
 import TestiReview from './TestimonialReview'
-
 import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleLike } from '../features/likes/LikeSlice';
 
 
 function CardMore() {
   const date = new Date().toLocaleDateString('en-GB'); // DD/MM/
-  
+  const dispatch = useDispatch();
+  const likedItems = useSelector(state => state.likes.likedItems);
   const [showMenu, setShowMenu] = useState(false);
   const [showData, setShowData] = useState(null);
 
@@ -83,12 +85,12 @@ function CardMore() {
             Share
           </p>
         </div>
-        <div className="titleICon d-flex gap-2">
-          <i className="bi bi-suit-heart fs-5"></i>
-          <p style={{ textDecoration: "underline" }} className="fw-semibold">
-            Save
-          </p>
-        </div>
+        <div className="titleICon d-flex gap-2" onClick={() => dispatch(toggleLike(showData.id))} style={{ cursor: 'pointer' }}>
+  <i className={`bi ${likedItems[showData.id] ? "bi-heart-fill liked" : "bi-heart"} fs-5`}></i>
+  <p style={{ textDecoration: "underline" }} className="fw-semibold">
+    {likedItems[showData.id] ? "Saved" : "Save"}
+  </p>
+</div>
       </div>
     </div>
 
