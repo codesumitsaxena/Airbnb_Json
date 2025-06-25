@@ -1,40 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { DateRange } from 'react-date-range';
-import 'react-date-range/dist/styles.css'; 
-import 'react-date-range/dist/theme/default.css'; 
+import { useDispatch, useSelector } from 'react-redux';
+import { setDateRange } from '../features/likes/DateSelector/DateSlice';
 
-function DateSelector({ onDateChange }) {
-  const [range, setRange] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(),
-      key: 'selection',
-    },
-  ]);
+function DateSelector() {
+  const dispatch = useDispatch();
+  const { startDate, endDate } = useSelector((state) => state.dateRange);
 
   const handleChange = (item) => {
-    setRange([item.selection]);
-    onDateChange({
+    dispatch(setDateRange({
       startDate: item.selection.startDate,
       endDate: item.selection.endDate,
-    });
+    }));
   };
 
   return (
-    <div className="row">
-      <div className="col-lg-6">
-        <DateRange
-          onChange={handleChange}
-          moveRangeOnFirstSelection={false}
-          ranges={range}
-          months={2}
-          direction="horizontal"
-          showDateDisplay={false}
-        />
-      </div>
-    </div>
+    <DateRange
+      onChange={handleChange}
+      moveRangeOnFirstSelection={false}
+      ranges={[{ startDate, endDate, key: 'selection' }]}
+      months={2}
+      direction="horizontal"
+      showDateDisplay={false}
+    />
   );
 }
-
 
 export default DateSelector;

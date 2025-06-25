@@ -6,7 +6,7 @@ function GuestFav({ id }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/guestFav")
+    fetch("/data/Guest.json")
       .then((res) => res.json())
       .then((json) => {
         const matched = json.find((item) => item.id === id);

@@ -5,6 +5,8 @@ const nainitalListings = [
     title: "Lakeview Room",
     rating: 4.9,
     rate: "₹7,800 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 62,
@@ -54,6 +56,8 @@ const nainitalListings = [
     title: "Peaceful Cottage Retreat",
     rating: 4.8,
     rate: "₹6,800 for 2 nights",
+    guestFav: true,
+
   },
 ];
 module.exports = nainitalListings;

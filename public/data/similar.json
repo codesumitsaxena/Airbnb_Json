@@ -1,0 +1,65 @@
+[
+    {
+      "id": 31,
+      "image": "/assets/flat31.jpeg",
+      "title": "Room near Cyberhub",
+      "rating": 4.7,
+      "rate": "₹3,899 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 32,
+      "image": "/assets/flat32.jpeg",
+      "title": "Studio Apartment in Gurugram",
+      "rating": 4.8,
+      "rate": "₹5,250 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 33,
+      "image": "/assets/flat33.jpeg",
+      "title": "Service Apartment",
+      "rating": 4.5,
+      "rate": "₹6,100 for 2 nights"
+    },
+    {
+      "id": 34,
+      "image": "/assets/flat34.jpeg",
+      "title": "Private Room near Metro",
+      "rating": 4.6,
+      "rate": "₹2,950 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 35,
+      "image": "/assets/flat35.jpg",
+      "title": "Boutique Flat",
+      "rating": 4.9,
+      "rate": "₹7,200 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 36,
+      "image": "/assets/flat36.jpeg",
+      "title": "Entire Apartment with Balcony",
+      "rating": 4.7,
+      "rate": "₹5,999 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 37,
+      "image": "/assets/flat37.jpeg",
+      "title": "Homestay in Sector 45",
+      "rating": 4.6,
+      "rate": "₹3,750 for 2 nights"
+    },
+    {
+      "id": 38,
+      "image": "/assets/flat38.jpeg",
+      "title": "Premium Stay near Golf Course",
+      "rating": 5.0,
+      "rate": "₹9,850 for 2 nights",
+      "guestFav": true
+    }
+  ]
+  

@@ -4,11 +4,12 @@ function TestimonialReview({ id }) {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/testiData')
+    fetch('/data/Testimonials.json')
       .then((res) => res.json())
       .then((data) => setTestimonials(data))
       .catch((err) => console.error('Error fetching testimonials:', err));
   }, []);
+  
 
   const currentTestimonial = testimonials.find((item) => item.id === id);
 

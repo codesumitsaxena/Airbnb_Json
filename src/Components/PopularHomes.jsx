@@ -7,44 +7,39 @@ function PopularHomes() {
   const [dehradun, setDehradun] = useState([]);
   const [southDelhi, setSouthDelhi] = useState([]);
   const [eastdelhi, setEastDelhi] = useState([]);
-
-
   const [kullu, setKullu] = useState([]);
   const [nainital, setNainital] = useState([]);
-  const [goa, setGoa] = useState([]);
-
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/gurugram')
+    fetch('/data/gurgaon.json')
       .then(res => res.json())
       .then(data => setGurgaon(data));
-
-    fetch('http://localhost:5000/api/noida')
+  
+    fetch('/data/Noida.json')
       .then(res => res.json())
       .then(data => setGautam(data));
-
-    fetch('http://localhost:5000/api/similar')
+  
+    fetch('/data/similar.json')
       .then(res => res.json())
       .then(data => setDehradun(data));
-
-      fetch('http://localhost:5000/api/southdelhi')
+  
+    fetch('/data/SouthDelhi.json')
       .then(res => res.json())
       .then(data => setSouthDelhi(data));
-
-      fetch('http://localhost:5000/api/kullu')
+  
+    fetch('/data/Kullu.json')
       .then(res => res.json())
       .then(data => setKullu(data));
-
-      fetch('http://localhost:5000/api/nainital')
+  
+    fetch('/data/Nainital.json')
       .then(res => res.json())
       .then(data => setNainital(data));
-      
-      fetch('http://localhost:5000/api/eastdelhi')
+  
+    fetch('/data/EastDelhi.json')
       .then(res => res.json())
       .then(data => setEastDelhi(data));
-
-     
   }, []);
+  
   
 
   return (

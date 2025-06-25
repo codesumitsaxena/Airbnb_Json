@@ -72,7 +72,7 @@ const moreGurugram = [
 ,
     host: "Riya",
     HostName: "Riya",
-    hostImg: "http://localhost:5000/assets/HostIcon2.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "Hosting since 2022"
   },
   {
@@ -120,7 +120,7 @@ const moreGurugram = [
     reviewCount: 14,
     host: "Sneha",
     HostName: "Sneha",
-    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon7.jpg",
     hostDescription: "New host",
     rate: "₹2,385 for 2 nights"
 ,
@@ -172,7 +172,7 @@ const moreGurugram = [
     reviewCount: 34,
     host: "Simran",
     HostName: "Simran",
-    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "Hosting since 2019"
   },
   {
@@ -197,7 +197,7 @@ const moreGurugram = [
     rate: "₹24,000 for 2 nights"
 ,
     HostName: "Aayush",
-    hostImg: "http://localhost:5000/assets/HostIcon7.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon3.jpg",
     hostDescription: "SuperHost - 4 years"
   },
   //  Noida API Data
@@ -250,7 +250,7 @@ const moreGurugram = [
     reviewCount: 19,
     host: "Neha",
     HostName: "Neha",
-    hostImg: "http://localhost:5000/assets/HostIcon2.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   {
@@ -302,7 +302,7 @@ const moreGurugram = [
 
     host: "Priya",
     HostName: "Priya",
-    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon7.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -328,7 +328,7 @@ const moreGurugram = [
 
     host: "Rajeev",
     HostName: "Rajeev",
-    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
     hostDescription: "SuperHost - 1 year hosting"
   },
   {
@@ -354,7 +354,7 @@ const moreGurugram = [
     reviewCount: 37,
     host: "Anjali",
     HostName: "Anjali",
-    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "SuperHost - 3 years hosting"
   },
   {
@@ -380,7 +380,7 @@ const moreGurugram = [
     reviewCount: 29,
     host: "Siddharth",
     HostName: "Siddharth",
-    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon2.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   {
@@ -478,11 +478,10 @@ const moreGurugram = [
     guestFavorite: false,
     rating: 4.5,
     rate: "₹6,100 for 2 nights",
-
     reviewCount: 35,
     host: "Kritika",
     HostName: "Kritika",
-    hostImg: "http://localhost:5000/assets/host3.jpeg",
+    hostImg: "http://localhost:5000/assets/host6.jpeg",
     hostDescription: "2 years hosting"
   },
   {
@@ -531,7 +530,7 @@ const moreGurugram = [
     reviewCount: 66,
     host: "Anjali",
     HostName: "Anjali",
-    hostImg: "http://localhost:5000/assets/host5.jpeg",
+    hostImg: "http://localhost:5000/assets/host7.jpeg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -556,7 +555,7 @@ const moreGurugram = [
     reviewCount: 51,
     host: "Kunal",
     HostName: "Kunal",
-    hostImg: "http://localhost:5000/assets/host6.jpeg",
+    hostImg: "http://localhost:5000/assets/host4.jpeg",
     hostDescription: "3 years hosting"
   },
   {
@@ -606,7 +605,7 @@ const moreGurugram = [
     reviewCount: 78,
     host: "Siddharth",
     HostName: "Siddharth",
-    hostImg: "http://localhost:5000/assets/host8.jpeg",
+    hostImg: "http://localhost:5000/assets/host2.jpeg",
     hostDescription: "SuperHost - 5 years hosting"
   },
 
@@ -633,7 +632,7 @@ const moreGurugram = [
     reviewCount: 32,
     host: "Aman",
     HostName: "Aman",
-    hostImg: "http://localhost:5000/assets/host41.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -658,7 +657,7 @@ const moreGurugram = [
 ,
     host: "Nikita",
     HostName: "Nikita",
-    hostImg: "http://localhost:5000/assets/host42.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   {
@@ -683,7 +682,7 @@ const moreGurugram = [
 ,
     host: "Rajeev",
     HostName: "Rajeev",
-    hostImg: "http://localhost:5000/assets/host43.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon2.jpg",
     hostDescription: "Verified Host - 1.5 years hosting"
   },
   {
@@ -708,7 +707,7 @@ const moreGurugram = [
     reviewCount: 18,
     host: "Sneha",
     HostName: "Sneha",
-    hostImg: "http://localhost:5000/assets/host44.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
     hostDescription: "SuperHost - 3 years hosting"
   },
   {
@@ -730,9 +729,9 @@ const moreGurugram = [
     rating: 4.9,
     rate: "₹7,850 for 2 nights",
     reviewCount: 41,
-    host: "The Orchid Inn",
-    HostName: "The Orchid Inn",
-    hostImg: "http://localhost:5000/assets/host45.jpg",
+    host: "Rahul ji Chat wale ",
+    HostName: "Rahul Ji Chat wale ",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "Professional Host - 5 years experience"
   },
   {
@@ -757,7 +756,7 @@ const moreGurugram = [
     reviewCount: 55,
     host: "LuxuryStays",
     HostName: "LuxuryStays",
-    hostImg: "http://localhost:5000/assets/host46.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "Top Rated - 6 years of luxury hosting"
   },
   {
@@ -780,9 +779,9 @@ const moreGurugram = [
     guestFavorite: false,
     rating: 4.8,
     reviewCount: 30,
-    host: "Kritika",
-    HostName: "Kritika",
-    hostImg: "http://localhost:5000/assets/host47.jpg",
+    host: "Munni",
+    HostName: "Munni",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "Reliable Host - 3 years hosting"
   },
   {
@@ -807,7 +806,7 @@ const moreGurugram = [
     reviewCount: 36,
     host: "Tanya",
     HostName: "Tanya",
-    hostImg: "http://localhost:5000/assets/host48.jpg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "SuperHost - 4.5 years hosting"
   },
   //  Kullu API Data
@@ -833,7 +832,7 @@ const moreGurugram = [
 
     host: "Bhavana",
     HostName: "Bhavana",
-    hostImg: "http://localhost:5000/assets/host1.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   {
@@ -858,7 +857,7 @@ const moreGurugram = [
 
     host: "Rohit",
     HostName: "Rohit",
-    hostImg: "http://localhost:5000/assets/host2.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -883,7 +882,7 @@ const moreGurugram = [
     reviewCount: 17,
     host: "Megha",
     HostName: "Megha",
-    hostImg: "http://localhost:5000/assets/host3.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "SuperHost - 1 year hosting"
   },
   {
@@ -907,7 +906,7 @@ const moreGurugram = [
     host: "Dev",
     rate: "₹7,100 for 2 nights",
     HostName: "Dev",
-    hostImg: "http://localhost:5000/assets/host4.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
     hostDescription: "SuperHost - 5 years hosting"
   },
   {
@@ -932,7 +931,7 @@ const moreGurugram = [
 
     host: "Priya",
     HostName: "Priya",
-    hostImg: "http://localhost:5000/assets/host5.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon7.jpg",
     hostDescription: "SuperHost - 2.5 years hosting"
   },
   {
@@ -957,7 +956,7 @@ const moreGurugram = [
     reviewCount: 9,
     host: "Karan",
     HostName: "Karan",
-    hostImg: "http://localhost:5000/assets/host6.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "Hosting since 2022"
   },
   {
@@ -982,7 +981,7 @@ const moreGurugram = [
 
     host: "Simran",
     HostName: "Simran",
-    hostImg: "http://localhost:5000/assets/host7.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon7.jpg",
     hostDescription: "SuperHost - 3 years hosting"
   },
   {
@@ -1007,7 +1006,7 @@ const moreGurugram = [
     reviewCount: 35,
     host: "Anshul",
     HostName: "Anshul",
-    hostImg: "http://localhost:5000/assets/host8.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon3.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   //  Nainital API Data
@@ -1031,9 +1030,9 @@ const moreGurugram = [
     rate: "₹7,800 for 2 nights",
 
     reviewCount: 62,
-    host: "Annette",
-    HostName: "Amy",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    host: "Shivam",
+    HostName: "Shivam ",
+    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -1056,9 +1055,9 @@ const moreGurugram = [
     rate: "₹6,200 for 2 nights",
 
     reviewCount: 49,
-    host: "Elizabeth",
-    HostName: "Kara",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    host: "Karishma",
+    HostName: "Karishma",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "SuperHost - 5 years hosting"
   },
   {
@@ -1079,11 +1078,11 @@ const moreGurugram = [
     guestFavorite: false,
     rating: 4.6,
     reviewCount: 54,
-    host: "Jim",
-    HostName: "David",
+    host: "Komal",
+    HostName: "Komal",
     rate: "₹7,000 for 2 nights",
 
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "SuperHost - 1 years hosting"
   },
   {
@@ -1106,9 +1105,8 @@ const moreGurugram = [
     reviewCount: 43,
     host: "Gregory",
     rate: "₹5,500 for 2 nights",
-
-    HostName: "Jason",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    HostName: "Ankush",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "SuperHost - 1 years hosting"
   },
   {
@@ -1132,8 +1130,8 @@ const moreGurugram = [
     host: "Megan",
     rate: "₹5,900 for 2 nights",
 
-    HostName: "Lisa",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    HostName: "Munish",
+    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
     hostDescription: "SuperHost - 4 years hosting"
   },
   {
@@ -1156,9 +1154,9 @@ const moreGurugram = [
     guestFavorite: false,
     rating: 4.6,
     reviewCount: 51,
-    host: "Jennifer",
-    HostName: "William",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    host: "Gulshan",
+    HostName: "Gulshan",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "SuperHost - 1 years hosting"
   },
   {
@@ -1181,9 +1179,9 @@ const moreGurugram = [
     rate: "₹4,000 for 2 nights",
 
     reviewCount: 34,
-    host: "John",
-    HostName: "Randy",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    host: "Monu",
+    HostName: "Monu",
+    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
     hostDescription: "SuperHost - 1 years hosting"
   },
   {
@@ -1206,9 +1204,9 @@ const moreGurugram = [
     rate: "₹6,800 for 2 nights",
 
     reviewCount: 58,
-    host: "Janet",
-    HostName: "Kimberly",
-    hostImg: "http://localhost:5000/assets/automateBnb1.jpeg",
+    host: "Sumit",
+    HostName: "Sumit",
+    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   // East Delhi
@@ -1234,7 +1232,7 @@ const moreGurugram = [
     reviewCount: 21,
     host: "Ravi",
     HostName: "Ravi Kapoor",
-    hostImg: "http://localhost:5000/assets/host_ravi.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon4.jpg",
     hostDescription: "SuperHost - 1.5 years hosting"
   },
   {
@@ -1259,7 +1257,7 @@ const moreGurugram = [
     reviewCount: 16,
     host: "Riya",
     HostName: "Riya Dutt",
-    hostImg: "http://localhost:5000/assets/host_riya.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "Verified Host - 1 year hosting"
   },
   {
@@ -1284,7 +1282,7 @@ const moreGurugram = [
     rate: "₹4,300 for 2 nights",
 
     HostName: "Aakash Mehta",
-    hostImg: "http://localhost:5000/assets/host_aakash.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon5.jpg",
     hostDescription: "SuperHost - 2.5 years hosting"
   },
   {
@@ -1309,7 +1307,7 @@ const moreGurugram = [
     rate: "₹3,500 for 2 nights",
 
     HostName: "Nisha Sharma",
-    hostImg: "http://localhost:5000/assets/host_nisha.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "Trusted Host - 1 year hosting"
   },
   {
@@ -1334,7 +1332,7 @@ const moreGurugram = [
 
     host: "Kunal",
     HostName: "Kunal Verma",
-    hostImg: "http://localhost:5000/assets/host_kunal.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon1.jpg",
     hostDescription: "SuperHost - 3 years hosting"
   },
   {
@@ -1359,7 +1357,7 @@ const moreGurugram = [
     reviewCount: 14,
     host: "Simran",
     HostName: "Simran Kaur",
-    hostImg: "http://localhost:5000/assets/host_simran.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon6.jpg",
     hostDescription: "Verified Host - 1.5 years hosting"
   },
   {
@@ -1384,7 +1382,7 @@ const moreGurugram = [
     reviewCount: 20,
     host: "Deepak",
     HostName: "Deepak Singh",
-    hostImg: "http://localhost:5000/assets/host_deepak.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon2.jpg",
     hostDescription: "SuperHost - 2 years hosting"
   },
   {
@@ -1409,7 +1407,7 @@ const moreGurugram = [
 
     host: "Neha",
     HostName: "Neha Sethi",
-    hostImg: "http://localhost:5000/assets/host_neha.jpeg",
+    hostImg: "http://localhost:5000/assets/HostIcon8.jpg",
     hostDescription: "SuperHost - 2.5 years hosting"
   },
   {

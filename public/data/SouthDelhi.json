@@ -1,0 +1,65 @@
+[
+    {
+      "id": 41,
+      "image": "/assets/flat41.jpg",
+      "title": "Flat in South Delhi",
+      "rating": 4.8,
+      "rate": "₹8,250 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 42,
+      "image": "/assets/flat42.jpeg",
+      "title": "Apartment in South Delhi",
+      "rating": 4.7,
+      "rate": "₹6,900 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 43,
+      "image": "/assets/flat43.jpeg",
+      "title": "Room in South Delhi",
+      "rating": 4.6,
+      "rate": "₹4,300 for 2 nights"
+    },
+    {
+      "id": 44,
+      "image": "/assets/flat44.jpg",
+      "title": "Studio in South Delhi",
+      "rating": 4.5,
+      "rate": "₹5,100 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 45,
+      "image": "/assets/flat45.jpeg",
+      "title": "Hotel Room in South Delhi",
+      "rating": 4.9,
+      "rate": "₹7,850 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 46,
+      "image": "/assets/flat46.jpeg",
+      "title": "Suite in South Delhi",
+      "rating": 5.0,
+      "rate": "₹12,000 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 47,
+      "image": "/assets/flat47.jpeg",
+      "title": "Flat in South Delhi",
+      "rating": 4.8,
+      "rate": "₹8,250 for 2 nights"
+    },
+    {
+      "id": 48,
+      "image": "/assets/flat48.jpeg",
+      "title": "Flat in South Delhi",
+      "rating": 4.8,
+      "rate": "₹8,250 for 2 nights",
+      "guestFav": true
+    }
+  ]
+  

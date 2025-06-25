@@ -41,7 +41,7 @@ function CardMore() {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/gurugramDetail`)
+    fetch(`/data/CardDetail.json`)
       .then((res) => res.json())
       .then((data) => {
         const matchedData = data.find((item) => item.id === parseInt(id));

@@ -5,6 +5,7 @@ const similarListings = [
       title: "Room near Cyberhub",
       rating: 4.7,
       rate: "₹3,899 for 2 nights",
+    guestFav: true,
     },
     {
       id: 32,
@@ -12,6 +13,8 @@ const similarListings = [
       title: "Studio Apartment in Gurugram",
       rating: 4.8,
       rate: "₹5,250 for 2 nights"
+      ,
+    guestFav: true,
     },
     {
       id: 33,
@@ -26,6 +29,8 @@ const similarListings = [
       title: "Private Room near Metro",
       rating: 4.6,
       rate: "₹2,950 for 2 nights"
+      ,
+    guestFav: true,
     },
     {
       id: 35,
@@ -33,6 +38,8 @@ const similarListings = [
       title: "Boutique Flat",
       rating: 4.9,
       rate: "₹7,200 for 2 nights"
+      ,
+    guestFav: true,
     },
     {
       id: 36,
@@ -40,6 +47,8 @@ const similarListings = [
       title: "Entire Apartment with Balcony",
       rating: 4.7,
       rate: "₹5,999 for 2 nights"
+      ,
+    guestFav: true,
     },
     {
       id: 37,
@@ -54,6 +63,8 @@ const similarListings = [
       title: "Premium Stay near Golf Course",
       rating: 5.0,
       rate: "₹9,850 for 2 nights"
+      ,
+    guestFav: true,
     },
 
     ];

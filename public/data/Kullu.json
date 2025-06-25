@@ -1,0 +1,64 @@
+[
+    {
+      "id": 51,
+      "image": "/assets/flat51.jpeg",
+      "title": "Wooden Cabin in Kullu",
+      "rating": 4.8,
+      "rate": "₹5,400 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 52,
+      "image": "/assets/flat52.jpeg",
+      "title": "Scenic View Homestay",
+      "rating": 4.7,
+      "rate": "₹6,000 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 53,
+      "image": "/assets/flat53.jpeg",
+      "title": "Valley Side Cottage",
+      "rating": 4.6,
+      "rate": "₹4,700 for 2 nights"
+    },
+    {
+      "id": 54,
+      "image": "/assets/flat54.jpeg",
+      "title": "Private Stay in Hills",
+      "rating": 4.9,
+      "rate": "₹7,100 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 55,
+      "image": "/assets/flat55.jpeg",
+      "title": "Studio Cottage",
+      "rating": 4.5,
+      "rate": "₹5,800 for 2 nights"
+    },
+    {
+      "id": 56,
+      "image": "/assets/flat56.jpeg",
+      "title": "Budget Wooden Stay",
+      "rating": 4.3,
+      "rate": "₹3,900 for 2 nights"
+    },
+    {
+      "id": 57,
+      "image": "/assets/flat57.jpeg",
+      "title": "Cozy Duplex Cabin",
+      "rating": 4.6,
+      "rate": "₹6,200 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 58,
+      "image": "/assets/flat58.jpeg",
+      "title": "River Touch Homestay",
+      "rating": 4.8,
+      "rate": "₹6,500 for 2 nights",
+      "guestFav": true
+    }
+  ]
+  

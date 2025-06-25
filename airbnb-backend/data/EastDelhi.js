@@ -33,6 +33,8 @@ const southeastDelhiListings = [
     title: "Couple Friendly Space",
     rating: 4.5,
     rate: "₹4,100 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 76,
@@ -54,6 +56,8 @@ const southeastDelhiListings = [
     title: "Ground Floor Studio",
     rating: 4.6,
     rate: "₹4,700 for 2 nights",
+    guestFav: true,
+
   },
 ];
 module.exports = southeastDelhiListings;

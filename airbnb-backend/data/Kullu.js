@@ -5,6 +5,7 @@ const kulluListings = [
     title: "Wooden Cabin in Kullu",
     rating: 4.8,
     rate: "₹5,400 for 2 nights",
+    guestFav: true,
   },
   {
     id: 52,
@@ -12,6 +13,8 @@ const kulluListings = [
     title: "Scenic View Homestay",
     rating: 4.7,
     rate: "₹6,000 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 53,
@@ -19,6 +22,7 @@ const kulluListings = [
     title: "Valley Side Cottage",
     rating: 4.6,
     rate: "₹4,700 for 2 nights",
+
   },
   {
     id: 54,
@@ -26,6 +30,8 @@ const kulluListings = [
     title: "Private Stay in Hills",
     rating: 4.9,
     rate: "₹7,100 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 55,
@@ -47,6 +53,8 @@ const kulluListings = [
     title: "Cozy Duplex Cabin",
     rating: 4.6,
     rate: "₹6,200 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 58,
@@ -54,6 +62,9 @@ const kulluListings = [
     title: "River Touch Homestay",
     rating: 4.8,
     rate: "₹6,500 for 2 nights",
+    guestFav: true,
+
   },
+
 ];
 module.exports = kulluListings;

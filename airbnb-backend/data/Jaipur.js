@@ -5,6 +5,8 @@ const jaipurListings = [
     title: "Traditional Haveli",
     rating: 4.9,
     rate: "₹9,000 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 82,
@@ -12,6 +14,9 @@ const jaipurListings = [
     title: "Luxury Villa with Pool",
     rating: 4.8,
     rate: "₹12,000 for 2 nights",
+    guestFav: true,
+
+
   },
   {
     id: 83,
@@ -33,6 +38,8 @@ const jaipurListings = [
     title: "Pink City View Stay",
     rating: 4.4,
     rate: "₹6,000 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 86,
@@ -47,6 +54,8 @@ const jaipurListings = [
     title: "Heritage Guesthouse",
     rating: 4.7,
     rate: "₹7,500 for 2 nights",
+    guestFav: true,
+
   },
   {
     id: 88,
@@ -54,6 +63,8 @@ const jaipurListings = [
     title: "Designer Stay in Jaipur",
     rating: 4.8,
     rate: "₹8,000 for 2 nights",
+    guestFav: true,
+
   },
 ];
 module.exports = jaipurListings;

@@ -1,0 +1,61 @@
+[
+    {
+      "id": 61,
+      "image": "/assets/flat61.jpeg",
+      "title": "Lakeview Room",
+      "rating": 4.9,
+      "rate": "₹7,800 for 2 nights",
+      "guestFav": true
+    },
+    {
+      "id": 62,
+      "image": "/assets/flat62.jpeg",
+      "title": "Himalayan Homestay",
+      "rating": 4.7,
+      "rate": "₹6,200 for 2 nights"
+    },
+    {
+      "id": 63,
+      "image": "/assets/flat63.jpeg",
+      "title": "Luxury Hill Cottage",
+      "rating": 4.6,
+      "rate": "₹7,000 for 2 nights"
+    },
+    {
+      "id": 64,
+      "image": "/assets/flat64.jpeg",
+      "title": "Private Suite Near Mall Road",
+      "rating": 4.5,
+      "rate": "₹5,500 for 2 nights"
+    },
+    {
+      "id": 65,
+      "image": "/assets/flat65.jpeg",
+      "title": "Modern Bungalow",
+      "rating": 4.4,
+      "rate": "₹5,900 for 2 nights"
+    },
+    {
+      "id": 66,
+      "image": "/assets/flat66.jpeg",
+      "title": "Terrace Room",
+      "rating": 4.6,
+      "rate": "₹6,300 for 2 nights"
+    },
+    {
+      "id": 67,
+      "image": "/assets/flat67.jpeg",
+      "title": "Budget Stay with Kitchen",
+      "rating": 4.3,
+      "rate": "₹4,000 for 2 nights"
+    },
+    {
+      "id": 68,
+      "image": "/assets/flat68.jpeg",
+      "title": "Peaceful Cottage Retreat",
+      "rating": 4.8,
+      "rate": "₹6,800 for 2 nights",
+      "guestFav": true
+    }
+  ]
+  

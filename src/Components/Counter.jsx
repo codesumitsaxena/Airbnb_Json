@@ -56,19 +56,19 @@ function Counter({ rate, selectedDates }) {
 
   return (
     <>
-      <div className="AddToCart p-4 d-flex flex-column gap-2 position-relative">
-        <h4 className="fw-bold" style={{ fontSize: "1.4rem" }}>
+      <div className="AddToCart p-4 d-flex flex-column  position-relative">
+        <h4 className="fw-bold my-3" style={{ fontSize: "1.4rem" }}>
           {rate || "Add dates for prices"}
         </h4>
         <div
-          className="DateArea d-flex border-bottom align-items-center"
-          style={{ height: "55%" }}
+          className="DateArea d-flex border rounded-top  align-items-center"
+          style={{ height: "85%" }}
         >
           <DateModal/>
         </div>
-        <div className="AddGuest d-flex mt-2 justify-content-between px-3 pt-1">
+        <div className="AddGuest d-flex  border-start border-end border-bottom rounded-bottom  justify-content-between px-3 pt-2">
           <div className="DropDownArea">
-            <h6 className="fw-bold">Guest</h6>
+            <h6 className="fw-bold mb-0">Guest</h6>
             <h6 className="fw-bold">
               {`${adult + children} guests` +
                 (Infants > 0 ? `, ${Infants} infants` : "") +
@@ -80,7 +80,7 @@ function Counter({ rate, selectedDates }) {
           </div>
         </div>
 
-        <button className="px-3 py-2 fs-5 bg-danger rounded-pill  CartBTn">
+        <button className="px-3 mt-4 py-2 fs-5 bg-danger rounded-pill  CartBTn">
           Check availability
         </button>
       </div>
