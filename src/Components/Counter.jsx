@@ -8,6 +8,10 @@ function Counter({ rate, selectedDates }) {
   const [Infants, setInfants] = useState(0);
   const [Pet, Setpets] = useState(0);
   const [showGuestDropdown, setShowGuestDropdown] = useState(false);
+  const start = new Date(selectedDates.startDate);
+  const end = new Date(selectedDates.endDate);
+  const nights = Math.max(1, Math.ceil((end - start) / (1000 * 60 * 60 * 24)));
+  const total = rate * nights;
 
   const ShowGuestChart = () => {
     setShowGuestDropdown(!showGuestDropdown);
@@ -57,9 +61,12 @@ function Counter({ rate, selectedDates }) {
   return (
     <>
       <div className="AddToCart p-4 d-flex flex-column  position-relative">
-        <h4 className="fw-bold my-3" style={{ fontSize: "1.4rem" }}>
-          {rate || "Add dates for prices"}
-        </h4>
+      <h4 className="fw-bold my-3" style={{ fontSize: "1.4rem" }}>
+  {rate && selectedDates?.startDate && selectedDates?.endDate ? (() => {
+    return `₹${total.toLocaleString("en-IN")} for ${nights} night${nights > 1 ? "s" : ""}`;
+  })() : "Add dates for prices"}
+</h4>
+
         <div
           className="DateArea d-flex border rounded-top  align-items-center"
           style={{ height: "85%" }}

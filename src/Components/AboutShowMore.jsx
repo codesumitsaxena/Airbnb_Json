@@ -18,7 +18,7 @@ function AboutShowMore() {
         dialogClassName="rounded-modal"
        >
         <Modal.Body className=" SpecialFont" style={{height: "480px" , overflowX:"hidden"}}>
-        <div className="container SpecialFont px-2 pt-4 d-flex  flex-column gap-3" style={{fontSize:"1.093rem" , paddingTop:"60px"}}>
+        <div className="container SpecialFont px-4 pt-4 d-flex  flex-column gap-3" style={{fontSize:"1.093rem" , paddingTop:"60px"}}>
         <h2 className='fw-bold'>About this space</h2>
          <p className='TextBlack' >Relax with family and friends at this peaceful, fully furnished studio apartment (370 sq. ft.) in DLF Capital Greens, New Delhi, Moti Nagar. Enjoy self-check-in via a locker box, 3 lifts, and premium amenities for a comfortable stay. This cozy, well-designed studio features an attached washroom and modern facilities, conveniently located near Central Delhi.
 </p>

@@ -30,12 +30,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleLike } from '../features/likes/LikeSlice';
 
 
+
 function CardMore() {
   const date = new Date().toLocaleDateString('en-GB'); // DD/MM/
   const dispatch = useDispatch();
   const likedItems = useSelector(state => state.likes.likedItems);
   const [showMenu, setShowMenu] = useState(false);
   const [showData, setShowData] = useState(null);
+  const { startDate, endDate } = useSelector((state) => state.dateRange);
+
 
   const { id } = useParams();
 
@@ -366,7 +369,7 @@ function CardMore() {
             <div className="sticky-box">
             <Counter
         rate={showData.rate}
-        selectedDates={selectedDates}
+        selectedDates={{ startDate, endDate }}
       />
 
             </div>
