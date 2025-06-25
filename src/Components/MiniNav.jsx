@@ -1,6 +1,6 @@
 import React from 'react'
 import Destination from './Destination'
-import WhoModel from './whoModel'
+import WhoModel from './WhoModel'
 import DateSelectorModal from './DateModal'
 function MiniNav() {
   return (
