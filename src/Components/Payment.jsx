@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import CardMoreNav from './CardMoreNav';
 import leftArrow from '../assets/leftArrow.svg';
 import Diamond from '../assets/Diamond.svg';
@@ -9,6 +10,19 @@ import Payment4 from '../assets/PaymemtIcon_4.svg';
 import Payment5 from '../assets/PaymemtIcon_5.svg';
 
 function Payment() {
+  const startDate = useSelector((state) => state.dateRange.startDate);
+const endDate = useSelector((state) => state.dateRange.endDate);
+
+
+const formatDate = (date) => {
+  return new Date(date).toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short', // Jul, Aug
+  });
+};
+
+const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`;
+
   return (
     <div className='container-fluid'>
       <CardMoreNav />
@@ -34,7 +48,7 @@ function Payment() {
             <div className="d-flex justify-content-between px-3 align-items-center py-2">
               <div>
                 <h6 className='mb-1'>Dates</h6>
-                <p className='mb-0 text-muted'>23 Jul – 13 Aug</p>
+                <p className='mb-0 text-muted'>{formattedDateRange}</p>
               </div>
               <a href="#" className='fw-bold text-dark'>Edit</a>
             </div>

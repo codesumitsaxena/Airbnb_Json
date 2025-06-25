@@ -46,42 +46,63 @@ const likedItems = useSelector(state => state.likes.likedItems);
       </div>
 
       <div
-        className="d-flex overflow-auto hide-scroll"
-        ref={scrollRef}
-        style={{ scrollBehavior: 'smooth', gap: '16px', padding: '0 1px', marginRight:"10px" }}
-      >
-        {cards.map((item) => (
-          <div className='flex-shrink-0' style={{ width: "204px" }} key={item.id}>
-<div className='card border-0' onClick={() => handleCardClick(item.id)} style={{ cursor: 'pointer' }}>
-              <div className="position-relative">
-                <img src={item.image} className="card-img-top" alt={item.title} />
-                <div className="top-badge d-flex justify-content-between px-1 py-1 w-100 position-absolute top-0">
-                {item.guestFav && (
-  <span className="guest-fav px-3 py-2">Guest Favourite</span>
-)}
- <div className="position-absolute top-0 end-0 px-2 py-2">
- <i
-  className={`bi ${likedItems[item.id] ? "bi-heart-fill liked" : "bi-heart"} fs-5 heart-icon`}
-  onClick={(e) => {
-    e.stopPropagation();
-    dispatch(toggleLike(item.id));
+  className="d-flex overflow-auto hide-scroll py-2"
+  ref={scrollRef}
+  style={{
+    scrollBehavior: 'smooth',
+    gap: '12px',
+    padding: '0 12px',
+    marginRight: '0',
   }}
-  role="button"
-/>
-
-  </div>
-                </div>
-              </div>
-              <div className='card-body m-0 p-2'>
-                <h6 className='card-title'>{item.title}</h6>
-                <p className='card-text'>
-                  {item.rate} <span className='fw-semibold'>Rating: ★ {item.rating}</span>
-                </p>
-              </div>
+>
+  {cards.map((item) => (
+    <div
+      className="flex-shrink-0 bg-dark CardHover"
+      style={{ width: '209px', borderRadius: '12px' }}
+      key={item.id}
+    >
+      <div
+        className="card border-0 h-100"
+        onClick={() => handleCardClick(item.id)}
+        style={{ cursor: 'pointer', borderRadius: '12px' }}
+      >
+        <div className="position-relative">
+          <img
+            src={item.image}
+            className="card-img-top"
+            alt={item.title}
+            style={{
+              height: '170px',
+              objectFit: 'cover',
+            }}
+          />
+          <div className="top-badge d-flex justify-content-between px-1 py-1 w-100 position-absolute top-0">
+            {item.guestFav && (
+              <span className="guest-fav px-2 py-1">Guest Favourite</span>
+            )}
+            <div className="position-absolute top-0 end-0 px-2 py-2">
+              <i
+                className={`bi ${likedItems[item.id] ? "bi-heart-fill liked" : "bi-heart"} fs-5 heart-icon`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  dispatch(toggleLike(item.id));
+                }}
+                role="button"
+              />
             </div>
           </div>
-        ))}
+        </div>
+        <div className="card-body p-2">
+          <h6 className="card-title mb-1">{item.title}</h6>
+          <p className="card-text small mb-0">
+            {item.rate} <span className="fw-semibold">★ {item.rating}</span>
+          </p>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
