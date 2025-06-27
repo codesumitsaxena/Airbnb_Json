@@ -9,7 +9,7 @@ import Footer from './Components/Footer'
 import CardMore from './Components/CardMore'
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/600.css";
-import '@fontsource/nunito'; // Defaults to 400
+import '@fontsource/nunito';
 import LoginPage from './Components/Login'
 import Payment from './Components/Payment';
 

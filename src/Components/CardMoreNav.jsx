@@ -45,7 +45,7 @@ function CardMoreNav() {
                 role="button"></i>
             </div>
           </div>
-        </div>
+        </div>:::::::::
       </div>      <hr />
     </div>
   )

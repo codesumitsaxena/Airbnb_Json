@@ -23,16 +23,13 @@ import Counter from './Counter'
 import Menu from './Menu'
 import { useState } from "react";
 import CardMoreNav from './CardMoreNav'
-import { data } from "react-router-dom";
 import TestiReview from './TestimonialReview'
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleLike } from '../features/likes/LikeSlice';
 
-
-
 function CardMore() {
-  const date = new Date().toLocaleDateString('en-GB'); // DD/MM/
+  const date = new Date().toLocaleDateString('en-GB');
   const dispatch = useDispatch();
   const likedItems = useSelector(state => state.likes.likedItems);
   const [showMenu, setShowMenu] = useState(false);
@@ -382,8 +379,6 @@ function CardMore() {
 
     <TestiReview id={showData.id} />
     <Testimonials id={id} showData={showData} />
-
-
     </>
 
 

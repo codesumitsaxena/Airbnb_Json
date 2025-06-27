@@ -343,3 +343,17 @@ font-size: 17px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.custom-arrow.rotate {
+  transform: translateY(-50%) rotate(180deg);
+}

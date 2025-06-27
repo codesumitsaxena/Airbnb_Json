@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import CardMoreNav from './CardMoreNav';
 import leftArrow from '../assets/leftArrow.svg';
@@ -10,18 +10,21 @@ import Payment4 from '../assets/PaymemtIcon_4.svg';
 import Payment5 from '../assets/PaymemtIcon_5.svg';
 
 function Payment() {
+  const [showDateModal, setShowDateModal] = useState(false);
+  const [showGuestModal, setShowGuestModal] = useState(false);
+
   const startDate = useSelector((state) => state.dateRange.startDate);
-const endDate = useSelector((state) => state.dateRange.endDate);
+  const endDate = useSelector((state) => state.dateRange.endDate);
+  const { adult, children, infants, pets } = useSelector((state) => state.guest);
 
+  const formatDate = (date) => {
+    return new Date(date).toLocaleDateString('en-GB', {
+      day: '2-digit',
+      month: 'short',
+    });
+  };
 
-const formatDate = (date) => {
-  return new Date(date).toLocaleDateString('en-GB', {
-    day: '2-digit',
-    month: 'short', // Jul, Aug
-  });
-};
-
-const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`;
+  const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`;
 
   return (
     <div className='container-fluid'>
@@ -50,16 +53,20 @@ const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`
                 <h6 className='mb-1'>Dates</h6>
                 <p className='mb-0 text-muted'>{formattedDateRange}</p>
               </div>
-              <a href="#" className='fw-bold text-dark'>Edit</a>
+              <span className='fw-bold text-dark' style={{ cursor: 'pointer' }} onClick={() => setShowDateModal(true)}>Edit</span>
             </div>
 
             <div className="d-flex justify-content-between px-3 align-items-center py-2">
               <div>
                 <h6 className='mb-1'>Guests</h6>
-                <p className='mb-0 text-muted'>4 guests, 1 infant, 1 pet</p>
+                <p className='mb-0 text-muted'>
+                  {adult + children} guest{adult + children > 1 ? 's' : ''} 
+                  {infants > 0 && `, ${infants} infant${infants > 1 ? 's' : ''}`} 
+                  {pets > 0 && `, ${pets} pet${pets > 1 ? 's' : ''}`}
+                </p>
                 <a href="#" className='text-dark fw-semibold' style={{ fontSize: '14px' }}>Bringing a service animal?</a>
               </div>
-              <a href="#" className='fw-bold text-dark'>Edit</a>
+              <span className='fw-bold text-dark' style={{ cursor: 'pointer' }} onClick={() => setShowGuestModal(true)}>Edit</span>
             </div>
 
             <hr />
@@ -88,17 +95,18 @@ const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`
               <h4>Cancellation policy</h4>
               <p><strong>Free cancellation before 30 Jun.</strong> Cancel before check-in on 1 Jul for a partial refund.</p>
             </div>
-            <div className="groupRules px-3 py-2">
-          <h4>Ground rules</h4>
-          <p>We ask every guest to remember a few simple things about what makes a great guest.</p>
-          <ul>
-            <li>Follow the house rules</li>
-            <li>Treat your Host’s home like your own</li>
-          </ul>
 
-          <button className='px-5 py-2 border rounded PaymentConfirmBtn ' >Confirm and Pay</button>
-        </div>
-        <hr />
+            <div className="groupRules px-3 py-2">
+              <h4>Ground rules</h4>
+              <p>We ask every guest to remember a few simple things about what makes a great guest.</p>
+              <ul>
+                <li>Follow the house rules</li>
+                <li>Treat your Host’s home like your own</li>
+              </ul>
+
+              <button className='px-5 py-2 border rounded PaymentConfirmBtn'>Confirm and Pay</button>
+            </div>
+            <hr />
           </div>
 
           {/* Right Section */}
@@ -128,9 +136,7 @@ const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`
                 <p>Taxes</p>
                 <p>₹8,019.02</p>
               </div>
-
               <hr />
-
               <div className="d-flex justify-content-between fw-semibold">
                 <p>Total (INR)</p>
                 <p>₹74,844.17</p>
@@ -139,26 +145,28 @@ const formattedDateRange = `${formatDate(startDate)} – ${formatDate(endDate)}`
           </div>
         </div>
       </div>
+
+      {/* Footer */}
       <div className="row">
-          <div className="footer-bottom d-flex justify-content-between align-items-center">
-               <div className="footer-left d-flex gap-3 align-items-center ">
-                   <a href="" className='text-decoration-none text-dark'>© 2025 Airbnb, Inc.</a>
-                    <a href="" className='text-decoration-none text-dark'>Privacy</a>
-                     <a href="" className='text-decoration-none text-dark'>Terms</a>
-                    <a href="" className='text-decoration-none text-dark'>Sitemap</a>
-                    <a href="" className='text-decoration-none text-dark'>Comapny Detail</a>
-               </div>
-               <div className="footer-right d-flex me-3 align-items-center">
-                    <span className='me-2'><i className="bi bi-globe2"></i> English</span>
-                    <span className='me-3'><i className="bi bi-currency-rupee"></i> INR</span>
-                    <div className="footer-icon d-flex gap-3">
-                    <i className="bi bi-facebook fs-5"></i>
-                    <i className="bi bi-instagram fs-5"></i>
-                    <i className="bi bi-twitter fs-5"></i>
-                    </div>
-               </div>
+        <div className="footer-bottom d-flex justify-content-between align-items-center">
+          <div className="footer-left d-flex gap-3 align-items-center">
+            <a href="#" className='text-decoration-none text-dark'>© 2025 Airbnb, Inc.</a>
+            <a href="#" className='text-decoration-none text-dark'>Privacy</a>
+            <a href="#" className='text-decoration-none text-dark'>Terms</a>
+            <a href="#" className='text-decoration-none text-dark'>Sitemap</a>
+            <a href="#" className='text-decoration-none text-dark'>Company Detail</a>
           </div>
-         </div>
+          <div className="footer-right d-flex me-3 align-items-center">
+            <span className='me-2'><i className="bi bi-globe2"></i> English</span>
+            <span className='me-3'><i className="bi bi-currency-rupee"></i> INR</span>
+            <div className="footer-icon d-flex gap-3">
+              <i className="bi bi-facebook fs-5"></i>
+              <i className="bi bi-instagram fs-5"></i>
+              <i className="bi bi-twitter fs-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
